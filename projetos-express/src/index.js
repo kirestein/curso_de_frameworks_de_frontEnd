@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 app.get('/uma-lista', (req, res) => {
     res.send('Esse é o conteúdo para uma página componente (uma lista)')
 })
-// testando o git
+
 app.get('/zf*zy', (req, res) => {
     res.send('Novo componente acessado a partir de uma rota customizada')
 })
