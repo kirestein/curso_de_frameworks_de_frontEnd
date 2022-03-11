@@ -32,7 +32,7 @@ router.post('/', async (req, res) => {
         })
     };
 
-    //read
+    //read => get
     router.get('/', async (req, res) => {
         try {
             const todos = await Todo.find()
@@ -46,17 +46,87 @@ router.post('/', async (req, res) => {
     })
 
     router.get('/:id', async (req, res) => {
-        //extrair p dadp da requisição pelo req.params
+        //extrair os dados da requisição pelo req.params
         const id = req.params.id
 
         try {
             const todo = await Todo.findOne({
-                
-            })
-        } catch (error) {
-            
-        }
+                _id: id
+            });
 
-    })
+            if(!todo) {
+                res.status(422).json({
+                    message: 'Não encontrei a tarefa, você fez alguma cagada aí'
+                });
+                return;
+            };
+
+            res.status(200).json(todo);
+        } catch (error) {
+            res.status(500).json({
+                error: error
+            });
+        };
+
+    });
+    // update (PUT = ATUALIZAÇÃO COMPLETA && PATCH = ATULIZAÇÃO PARCIAL)
+    router.put('/:id', async (req, res) => {
+        const id = req.params.id
+
+        const description = req.body
+
+        const todo = description
+
+        try {
+
+            const updateTodo = await Todo.updateOne({
+                _id: id
+            }, todo)
+
+            if (updateTodo.matchedCount === 0) {
+                res.status(422).json({
+                    message: 'Tarefa não encontrada'
+                })
+            }
+
+            res.status(200).json(todo)
+            
+        } catch (error) {
+            res.status(500).json({
+                error: error
+            });
+        };
+    });
+
+    //Delete
+    router.delete('/:id', async (req, res) => {
+        const id = req.params.id;
+
+        const todo = await Todo.findOne({
+            _id: id
+        });
+
+        if (!todo) {
+            res.status(422).json({
+                message: 'Tarefa não encontrada'
+            });
+            return
+        };
+
+        try {
+
+            await Todo.deleteOne({
+                _id: id
+            });
+            res.status(200).json({
+                message: 'Tarefa deletada com sucesso'
+            });
+            
+        } catch (error) {
+            res.status(500).json({
+                error: error
+            });
+        };
+    });
 });
 
