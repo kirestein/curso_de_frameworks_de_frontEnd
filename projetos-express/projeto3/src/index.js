@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
     });
 });
 
-
+app.listen(8081)
 
 const DB_USER = process.env.DB_USER;
 const DB_PASSWORD = encodeURIComponent(process.env.DB_PASSWORD);
