@@ -23,7 +23,7 @@ app.use(express.json());
 //rotas da nossa api
 const todoRoutes = require('./routes/todoRoutes');
 
-app.use('/todo', todoRoutes);
+// app.use('/todo', todoRoutes);
 
 app.get('/', (req, res) => {
     res.json({
@@ -31,10 +31,17 @@ app.get('/', (req, res) => {
     });
 });
 
-app.listen(8081)
+const server = app.listen(8080, () => {
+    //endereço completo http:// localhost porta
 
-const DB_USER = process.env.DB_USER;
-const DB_PASSWORD = encodeURIComponent(process.env.DB_PASSWORD);
+    const host = server.address().address//endereço http://localhost
+    const port = server.address().port//porta 8081
+
+    console.log(`O servidor está funfando no endereço ${host} : ${port}`)
+})
+
+const DB_USER = process.env.DB_USER;//.env
+const DB_PASSWORD = encodeURIComponent(process.env.DB_PASSWORD);//.env
 
 /* Nesta parte é a conexão com o Banco de Dados */
 
