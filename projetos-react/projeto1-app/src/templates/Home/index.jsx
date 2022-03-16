@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import './App.css'
-import Demo from './components/Demo'
+import './styles.css'
+import Demo from '../../components/Demo'
+import CompFuncional from '../../components/compFuncional'
+// import { Form } from '../../components/Form'
 
-export default class App extends Component {
+export default class Home extends Component {
 
   /* endereco() {
     const endereco = 'src/App.jsx'
@@ -15,6 +17,8 @@ export default class App extends Component {
 
       <div className="App">
         <Demo />
+        <CompFuncional />
+        {/* <Form /> */}
       </div>
 
     )
