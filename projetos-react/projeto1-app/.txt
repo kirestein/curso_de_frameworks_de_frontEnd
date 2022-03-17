@@ -1,0 +1,6 @@
+HTML, CSS, JavaScript
+HTML: Linguagem de marcação => <body> <div> <h1> <p> <table> <label> <strong>
+CSS: Linguagem de estilização => body, class, id, text-size, text-align,color, background
+JavaScript: Linguagem de Programação => var, const, if else, for, while
+
+REACT => Ele tem o poder de renderizar através do JSX (JavaScript com XML) o HTML

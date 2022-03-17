@@ -1,7 +1,6 @@
-/* Uma oura forma de construir um componente funcional
-
-export const Form = () => (
+// Uma oura forma de construir um componente funcional
+export const Form = (props) => (
     <div>
-      <h2>Um salve para o segundo componente funcional</h2>
+      <h2>Um salve do segundo componente funcional para {props.name}</h2>
     </div>
-  ) */
+  )

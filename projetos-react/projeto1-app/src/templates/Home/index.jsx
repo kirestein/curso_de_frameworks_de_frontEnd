@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import './styles.css'
 import Demo from '../../components/Demo'
 import CompFuncional from '../../components/compFuncional'
-// import { Form } from '../../components/Form'
+import { Form } from '../../components/Form'
+import Parent from '../../components/Parent'
 
 export default class Home extends Component {
 
@@ -11,14 +12,28 @@ export default class Home extends Component {
     return endereco
   } */
 
+  nomes() {
+    const nomes = 'Erik Proença'
+    
+    return nomes
+  }
+
   render() {
+    const react = 'react'
 
     return (
 
       <div className="App">
-        <Demo />
-        <CompFuncional />
-        {/* <Form /> */}
+        <Demo
+          nome={this.nomes()}
+        />
+        <CompFuncional
+          react={react}
+        />
+        <Form
+          name={this.nomes()}
+        />
+        <Parent />
       </div>
 
     )
