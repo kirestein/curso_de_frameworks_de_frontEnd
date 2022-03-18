@@ -13,13 +13,13 @@ class Home extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Home</h1>
-        <div>
+          <h1>TodoList</h1>
+          <div>
             <AddTodo
               onAddClick={text => dispatch(addTodo(text))}
             />
             <TodoList
-              todos = {visibleTodos}
+              todos={visibleTodos}
             />
           </div>
         </header>
@@ -30,12 +30,12 @@ class Home extends Component {
 
 //Criar a função que vai buscar o estado atual no local de armazenamento(store) criado anteriormente
 function select(state) {
-  return{
+  return {
     visibleTodos: state.todos
   }
 }
 
 /* Criar um conexão entre aquilo que está vindo da store com
 aquilo que será exibido a partir das props do aquivo principal(index.js) */
-export default connect (select) (Home)
+export default connect(select)(Home)
 

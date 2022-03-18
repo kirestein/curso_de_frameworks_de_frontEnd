@@ -15,7 +15,7 @@ export default class addTodo extends Component {
   }
 
   render() {
-    return (
+    return ( //JSX
       <div>
         <input type="text" ref={this.input} />
         <button className='btn-insert' onClick={e => this.addItem(e)}>

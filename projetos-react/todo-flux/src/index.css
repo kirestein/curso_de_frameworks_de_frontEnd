@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  list-style: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.list-clean{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-insert {
+  border-color: #2196F3;
+  color: rgb(53, 72, 92);
+}
+
+.btn-insert:hover {
+  background: #2196F3;
+  color: rgb(41, 39, 39);
+}
+ 
