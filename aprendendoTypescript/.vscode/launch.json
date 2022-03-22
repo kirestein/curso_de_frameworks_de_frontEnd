@@ -11,7 +11,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}\\loopWhile.js",
+      "program": "${workspaceFolder}\\loopDoWhile.js",
       "outFiles": [
         "${workspaceFolder}/**/*.js"
       ]

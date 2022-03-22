@@ -7,3 +7,5 @@ do {
   console.log(novoNum)
   novoNum--
 } while (novoNum >= 1)
+
+console.log(novoNum)// 0 ou 1

@@ -9,7 +9,7 @@ var numero = 10;
 var fatorial = 1;
 //vamos estabelecer nosso primeiro loop while em TypeScript
 while (numero >= 1) {
-    fatorial = fatorial * numero;
+    fatorial *= numero;
     numero--;
 }
 console.log("O fatorial de 10 \u00E9: ".concat(fatorial));

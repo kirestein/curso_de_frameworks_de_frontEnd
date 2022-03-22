@@ -12,7 +12,7 @@ var fatorial: number = 1
 
 //vamos estabelecer nosso primeiro loop while em TypeScript
 while (numero >= 1) {
-  fatorial = fatorial * numero
+  fatorial *= numero
   numero--
 }
 
