@@ -16,6 +16,6 @@ while (numero >= 1) {
   numero--
 }
 
-console.log(`O fatorial de ${numero} é: ${fatorial}`)
+console.log(`O fatorial de 10 é: ${fatorial}`)
 
 //fatorial de 10(10!) => 10.9.8.7.6.5.4.3.2.1
