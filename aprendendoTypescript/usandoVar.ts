@@ -49,3 +49,5 @@ function declarandoVar() {
   console.log(num4)
 }
 declarandoVar()
+num1 = 8
+var num1: number = 1
