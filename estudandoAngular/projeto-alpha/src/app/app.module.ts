@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { HomeComponent } from './home/home.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InterpolationComponent,
-    HomeComponent
+    HomeComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule,
