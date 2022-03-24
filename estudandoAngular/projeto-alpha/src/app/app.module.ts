@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+//importando o módulo Forms
+import { FormsModule } from '@angular/forms';
+// imporntando nossos componentes
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { HomeComponent } from './home/home.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
@@ -20,7 +23,8 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
