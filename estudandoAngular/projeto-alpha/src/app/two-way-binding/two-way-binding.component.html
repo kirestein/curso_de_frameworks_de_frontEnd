@@ -1,1 +1,9 @@
-<p>two-way-binding works!</p>
+<div>
+  <div>
+    <span>Insira seu nome</span>
+    <input type="text" [(ngModel)]="nome" >
+  </div>
+  <br><br>
+  <span>Seu nome é: </span>
+  <h2> {{ nome }} </h2>
+</div>
