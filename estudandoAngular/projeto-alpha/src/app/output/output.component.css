@@ -1,0 +1,30 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 1rem 1.5rem;/* 1rem = 16px */
+  margin: 0.5rem 0;
+  display: inline-block;
+  border: 1px solid #040670;
+  box-sizing: border-box;
+}
+
+input[type=button] {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem 1.5rem;
+  background-color: #1976D2;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.25rem;
+  transition: 0.25s;
+}
+
+input[type=button]:hover {
+  background-color: #DD0031;
+}
