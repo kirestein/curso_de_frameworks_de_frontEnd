@@ -14,7 +14,7 @@
 
   <!-- Usando *ngIf/Else -->
   <h2>Usando *ngIf/Else</h2>
-  <p *ngIf="!exiba; else primeiroElse">
+  <p *ngIf="exiba; else primeiroElse">
     Texto exibido quando o checkbox estiver "ATIVADO" (ou seja, quando for true)
   </p>
   <!-- construindo a "miniview" -->
@@ -37,4 +37,13 @@
   <ng-template #novoElse>
     Texto exibido quando o checkbox estiver "DESATIVADO" (ou seja, quando for false)
   </ng-template>
+
+  <!--Usando o atributo hidden-->
+  <h2>Usando o atributo hidden</h2>
+  <p [hidden]="exiba">
+    Texto exibido quando o checkbox estiver "DESATIVADO" (ou seja, quando for false)
+  </p>
+  <p [hidden]="!exiba">
+    Texto exibido quando o checkbox estiver "ATIVADO" (ou seja, quando for true)
+  </p>
 </div>
