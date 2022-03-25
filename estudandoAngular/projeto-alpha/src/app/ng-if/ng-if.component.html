@@ -1,1 +1,14 @@
-<p>ng-if works!</p>
+<div class="content">
+  <h2>Implementação da Diretiva *ngIf</h2>
+  <div>
+    Propriedade "exiba": <input type="checkbox" [(ngModel)]="exiba" >
+  </div>
+  <!-- uso da diretiva *ngIf -->
+  <h2>Uso da diretiva *ngIf</h2>
+  <p *ngIf="exiba" >
+    Texto exibido quando o checkbox estiver "ATIVADO" (ou seja, quando for true)
+  </p>
+  <p *ngIf="!exiba">
+    Texto exibido quando o checkbox estiver "DESATIVADO" (ou seja, quando for false)
+  </p>
+</div>

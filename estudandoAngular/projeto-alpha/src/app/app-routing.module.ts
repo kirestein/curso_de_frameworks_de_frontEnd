@@ -7,6 +7,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { CPaiComponent } from './c-pai/c-pai.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'home', pathMatch:'full'},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:'propb', component:PropertyBindingComponent},
   {path:'eventb', component:EventBindingComponent},
   {path:'two-way', component:TwoWayBindingComponent},
-  {path:'pai', component:CPaiComponent}
+  {path:'pai', component:CPaiComponent},
+  {path:'if', component:NgIfComponent}
 ];
 
 @NgModule({
