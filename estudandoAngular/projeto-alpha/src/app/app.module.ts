@@ -14,6 +14,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { CInputFilhoComponent } from './c-input-filho/c-input-filho.component';
 import { CPaiComponent } from './c-pai/c-pai.component';
 import { OutputComponent } from './output/output.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { OutputComponent } from './output/output.component';
     TwoWayBindingComponent,
     CInputFilhoComponent,
     CPaiComponent,
-    OutputComponent
+    OutputComponent,
+    NgIfComponent
   ],
   imports: [
     BrowserModule,
