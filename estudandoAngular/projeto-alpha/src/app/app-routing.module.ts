@@ -6,6 +6,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { CPaiComponent } from './c-pai/c-pai.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'home', pathMatch:'full'},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:'interpolation', component:InterpolationComponent},
   {path:'propb', component:PropertyBindingComponent},
   {path:'eventb', component:EventBindingComponent},
-  {path:'two-way', component:TwoWayBindingComponent}
+  {path:'two-way', component:TwoWayBindingComponent},
+  {path:'pai', component:CPaiComponent}
 ];
 
 @NgModule({
