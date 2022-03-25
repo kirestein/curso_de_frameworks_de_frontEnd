@@ -13,6 +13,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { CInputFilhoComponent } from './c-input-filho/c-input-filho.component';
 import { CPaiComponent } from './c-pai/c-pai.component';
+import { OutputComponent } from './output/output.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CPaiComponent } from './c-pai/c-pai.component';
     EventBindingComponent,
     TwoWayBindingComponent,
     CInputFilhoComponent,
-    CPaiComponent
+    CPaiComponent,
+    OutputComponent
   ],
   imports: [
     BrowserModule,
