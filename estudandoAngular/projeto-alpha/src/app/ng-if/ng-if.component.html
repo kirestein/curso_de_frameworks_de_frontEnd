@@ -11,4 +11,14 @@
   <p *ngIf="!exiba">
     Texto exibido quando o checkbox estiver "DESATIVADO" (ou seja, quando for false)
   </p>
+
+  <!-- Usando *ngIf/Else -->
+  <h2>Usando *ngIf/Else</h2>
+  <p *ngIf="exiba; else primeiroElse">
+    Texto exibido quando o checkbox estiver "ATIVADO" (ou seja, quando for true)
+  </p>
+  <!-- construindo a "miniview" -->
+  <ng-template #primeiroElse>
+    Texto exibido quando o checkbox estiver "DESATIVADO" (ou seja, quando for false)
+  </ng-template>
 </div>
