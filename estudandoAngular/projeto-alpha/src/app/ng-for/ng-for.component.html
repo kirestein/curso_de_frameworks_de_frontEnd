@@ -1,1 +1,9 @@
-<p>ng-for works!</p>
+<div class="content">
+  <h2> {{ subtitulo }} </h2>
+
+  <ul>
+    <li *ngFor="let i of filmes">
+      {{ i.titulo }} - {{ i.direcao }}
+    </li>
+  </ul>
+</div>

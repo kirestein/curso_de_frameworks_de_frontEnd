@@ -9,7 +9,7 @@ export class NgForComponent {
   // vamos criar a propriedade com a expressão de uso da diretiva *ngFor
   subtitulo: string = '5 filmes sensacionais!'
   // criando nossa coleção de filmes sensacionais
-  fimes: Filme[] = [
+  filmes: Filme[] = [
     {
       titulo: 'Laranja Mecânica',
       direcao: 'Stanley Kubrik',
