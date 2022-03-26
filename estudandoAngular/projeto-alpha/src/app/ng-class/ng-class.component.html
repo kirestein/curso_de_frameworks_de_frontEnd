@@ -1,1 +1,13 @@
-<p>ng-class works!</p>
+<div class="content">
+  <h2>Implementação de ngClasses</h2>
+  <div [ngClass]="'color size'" >
+    <p>
+      Cor e tamanho da fonte  alterados pelas propriedade CSS - descritas no arquivo .css - com atribuição de propriedade de string.
+    </p>
+  </div>
+  <div [ngClass]="cssAlteradoViaVar">
+    <p>
+      Cor e tamanho da fonte alterados pelas propriedade CSS - descritas no arquivo TS - com atribuição de propriedade (property binding - uso direto)
+    </p>
+  </div>
+</div>
