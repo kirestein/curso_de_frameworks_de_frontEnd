@@ -10,6 +10,11 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    var title: string = 'Está é a Home'
+
+    function showTitle(): string {
+      return title
+    }
   }
 
 }
