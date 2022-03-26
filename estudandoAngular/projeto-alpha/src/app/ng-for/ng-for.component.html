@@ -1,9 +1,9 @@
 <div class="content">
   <h2> {{ subtitulo }} </h2>
 
-  <ul>
+  <ul style="list-style: none">
     <li *ngFor="let i of filmes">
-      {{ i.titulo }} - {{ i.direcao }}
+      <strong style="color: #FF1493">Título:</strong> {{ i.titulo }} - <strong style="color: #FF1493">Direção:</strong> {{ i.direcao }} <br><br>
     </li>
   </ul>
 </div>
