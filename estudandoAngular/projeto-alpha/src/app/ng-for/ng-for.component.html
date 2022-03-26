@@ -7,3 +7,20 @@
     </li>
   </ul>
 </div>
+
+<table class="bordaTabela">
+  <thead>
+    <th>Título</th>
+    <th>Direção</th>
+    <th>Elenco</th>
+    <th>Ano de Lançamento</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let j of filmes">
+      <td> {{ j.titulo }} </td>
+      <td> {{ j.direcao }} </td>
+      <td> {{ j.elenco }} </td>
+      <td> {{ j.anoLancamento }} </td>
+    </tr>
+  </tbody>
+</table>
