@@ -9,6 +9,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { CPaiComponent } from './c-pai/c-pai.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'home', pathMatch:'full'},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'two-way', component:TwoWayBindingComponent},
   {path:'pai', component:CPaiComponent},
   {path:'if', component:NgIfComponent},
-  {path:'for', component:NgForComponent}
+  {path:'for', component:NgForComponent},
+  {path:'class', component:NgClassComponent}
 ];
 
 @NgModule({
