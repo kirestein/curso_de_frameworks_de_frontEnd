@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class PipeComponent {
   //vamos implementar as props Pipe
+  title: string = "Dudu três gols de cobertura no R. Ceni (Do meio de campo)"
   numFloat: number = 678.94
   dataHoje: Date = new Date()
   numDecimal: number = 4893547.9563
