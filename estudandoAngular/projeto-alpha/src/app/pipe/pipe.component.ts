@@ -17,6 +17,6 @@ export class PipeComponent {
       number: '0'
     }
   }
-  mesesAno: Array<string> = ['Jan', 'Fev', 'Mar', 'Abril', 'Maio', 'Junho', 'Julho', 'Agos', 'Set', 'Nov', 'Dez']
+  mesesAno: Array<string> = ['Jan', 'Fev', 'Mar', 'Abril', 'Maio', 'Junho', 'Julho', 'Agos', 'Set', 'Out', 'Nov', 'Dez']
   numPercentual: number = 0.35
 }

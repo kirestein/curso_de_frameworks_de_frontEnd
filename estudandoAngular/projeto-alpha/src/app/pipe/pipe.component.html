@@ -1,1 +1,26 @@
-<p>pipe works!</p>
+<table class="bordaTabela">
+  <thead>
+    <th>UpperCase Pipe</th>
+    <th>LowerCase Pipe</th>
+    <th>Currency Pipe</th><!--Pipe para a conversão de moedas-->
+    <th>Data Pipe</th><!--Pipe para conversão de datas-->
+    <th>Decimal Pipe</th><!--Pipe para formatação a partir de casas numéricas-->
+  </thead>
+  <tbody>
+    <tr>
+      <td> {{ title | uppercase }} </td>
+      <td> {{ title | lowercase }} </td>
+      <td>
+        {{ numFloat | currency: 'USD' }}
+        <br>
+        {{ numFloat | currency: 'BRL' }}
+      </td>
+      <td>
+        {{ dataHoje | date: 'd/M/y' }}
+        <br>
+        {{ dataHoje | date: 'shortTime' }}
+      </td>
+      <td> {{ numDecimal | number: '3.4-4' }} </td>
+    </tr>
+  </tbody>
+</table>
