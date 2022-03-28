@@ -1,1 +1,10 @@
-<p>ng-style works!</p>
+<div class="content">
+  <h2>Implementação ngStyle</h2>
+
+  <!-- Primeira parte -->
+  <br>
+  <input type="color" [(ngModel)]="cores" >
+  <div [ngStyle]="{ 'color': cores }" >
+    Mude a cor do texto!
+  </div>
+</div>
