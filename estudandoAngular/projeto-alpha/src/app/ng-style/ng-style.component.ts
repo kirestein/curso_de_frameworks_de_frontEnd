@@ -16,7 +16,7 @@ export class NgStyleComponent {
 
 //Criando a classe para vincular a diretiva ngStyle
 class EstiloCss {
-  'color': string = '#33c9ff'
-  'font-size': number = 80
+  'color': string = '#33c900'
+  'font-size.%': number = 250
   'font-weight': string = 'bold'
 }
