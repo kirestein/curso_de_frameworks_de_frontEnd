@@ -19,6 +19,7 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { AlterarTextoDirective } from './alterar-texto.directive';
+import { PipeComponent } from './pipe/pipe.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AlterarTextoDirective } from './alterar-texto.directive';
     NgForComponent,
     NgClassComponent,
     NgStyleComponent,
-    AlterarTextoDirective
+    AlterarTextoDirective,
+    PipeComponent
   ],
   imports: [
     BrowserModule,
