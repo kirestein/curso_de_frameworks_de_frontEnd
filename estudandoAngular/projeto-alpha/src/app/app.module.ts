@@ -23,6 +23,7 @@ import { PipeComponent } from './pipe/pipe.component';
 import { LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { RaizQuadrada } from './pipe-personalizado/pipe-raiz-quadrada'
 
 registerLocaleData(localePt, 'pt')
 
@@ -42,7 +43,8 @@ registerLocaleData(localePt, 'pt')
     NgClassComponent,
     NgStyleComponent,
     AlterarTextoDirective,
-    PipeComponent
+    PipeComponent,
+    RaizQuadrada
   ],
   imports: [
     BrowserModule,
