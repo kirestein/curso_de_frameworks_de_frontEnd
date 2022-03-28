@@ -7,4 +7,11 @@
   <div [ngStyle]="{ 'color': cores }" >
     Mude a cor do texto!
   </div>
+
+  <!-- Segunda parte -->
+  <br>
+  <input type="number" [(ngModel)]="tamanho" >
+  <div [ngStyle]="{ 'font-size.px': tamanho }" >
+    Muda o tamanho da fonte do texto via props descrita no arquivo TS
+  </div>
 </div>
