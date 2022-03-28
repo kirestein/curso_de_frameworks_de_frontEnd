@@ -49,7 +49,16 @@ registerLocaleData(localePt, 'pt')
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LOCALE_ID,
+      useValue: 'pt'
+    },
+    {
+      provide: DEFAULT_CURRENCY_CODE,
+      useValue: 'BRL'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
