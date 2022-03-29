@@ -1,1 +1,9 @@
-<p>formulario works!</p>
+<div class="content">
+  <form #capturaDados="ngForm" (ngSubmit)="recebedorDados(capturaDados.value)" >
+    <input type="email" name="email", placeholder="Informe seu email" ngModel >
+    <br><br>
+    <input type="password" name="senha" placeholder="Informe seu password" ngModel >
+    <br><br>
+    <input type="submit" value="Enviar Dados" >
+  </form>
+</div>
