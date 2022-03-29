@@ -1,1 +1,26 @@
-<p>c-service works!</p>
+<div class="content">
+  <h2>Implementação do Service</h2>
+
+  <button (click)="acessandoListaProdutos()" >
+    Obter Produtos
+  </button>
+  <br>
+
+  <!-- Criar uma tabela para exibir os dados -->
+  <table class="bordaTabela">
+    <thead>
+      <tr>
+        <th>Id do Produto</th>
+        <th>Nome do Produto</th>
+        <th>Preço do Produto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of cestaProdutos">
+        <td> {{ i.idProduct }} </td>
+        <td> {{ i.nomeProduct }} </td>
+        <td> {{ i.precoProduct }} </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
