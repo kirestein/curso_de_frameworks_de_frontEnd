@@ -1,7 +1,10 @@
 {
   "name": "projeto-alpha",
   "version": "0.0.0",
-  "author": {"name": "Erik Proença", "email": "erik.proenca2011@gmail.com"},
+  "author": {
+    "name": "Erik Proença",
+    "email": "erik.proenca2011@gmail.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -19,6 +22,7 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "angular": "^1.8.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
