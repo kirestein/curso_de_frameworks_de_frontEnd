@@ -16,6 +16,7 @@ export class ProductService {
       new Product(2, 'Máscara do Darth Vader', 159),
       new Product(3, 'Sabre de luz', 89)
     ]
+    return listaProdutos
   }
   
 }
