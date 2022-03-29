@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-formulario',
@@ -19,8 +19,11 @@ export class FormularioComponent {
   //chamando o hook para priorizar a instância da classe
   ngOnInit() {
     this.dataForm = new FormGroup({
-      email: new FormControl('angular@mail.com'),
-      senha: new FormControl('@#$%')
+      email: new FormControl('', Validators.compose([
+        Validators.required,
+        Validators.pattern('[^@]*@[^@]')
+      ])),
+      senha: new FormControl('')
     })
   }
 
