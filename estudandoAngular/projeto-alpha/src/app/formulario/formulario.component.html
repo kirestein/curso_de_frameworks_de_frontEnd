@@ -1,4 +1,4 @@
-<div class="content">
+<!-- <div class="content">
   <form #capturaDados="ngForm" (ngSubmit)="recebedorDados(capturaDados.value)" >
     <input type="email" name="email" placeholder="Informe seu email" ngModel >
     <br><br>
@@ -7,13 +7,13 @@
     <input type="submit" value="Enviar Dados" >
   </form>
 </div>
-<br><br><br>
+<br><br><br> -->
 
 <div class="content">
   <form [formGroup]="dataForm" (ngSubmit)="exibirDados(dataForm.value)" >
-    <input type="email" name="email1" placeholder="Informe seu email" formControlName="email1">
-    <input type="password" name="password" placeholder="Informe seu password" formControlName="password">
-    <input type="submit" value="Enviar Dados">
+    <input type="email" name="email" placeholder="Informe seu email" formControlName="email">
+    <input type="password" name="senha" placeholder="Informe seu senha" formControlName="senha">
+    <input type="submit" [disabled]="!dataForm.valid" value="Enviar Dados">
   </form>
   <!-- Aqui será exibido o valor da propriedade e-mail -->
   <p> O email informado é: {{ email }} </p>

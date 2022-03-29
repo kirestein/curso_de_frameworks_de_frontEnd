@@ -21,10 +21,19 @@ export class FormularioComponent {
     this.dataForm = new FormGroup({
       email: new FormControl('', Validators.compose([
         Validators.required,
-        Validators.pattern('[^@]*@[^@]')
+        Validators.pattern('[^@]*@[^@]*')
       ])),
-      senha: new FormControl('')
+      senha: new FormControl('', this.validacaoSenha)
     })
+  }
+
+  //Vamos criar um método para validar a senha
+  validacaoSenha(senhaDigitada: any): any {
+    if (senhaDigitada.value.length >= 8) {
+     return{senha: true}
+    } else {
+      return null
+    }
   }
 
   //Vamos criar um método para exibir o resultado do "controle" de formulário pela camada lógica
