@@ -23,7 +23,8 @@ import { PipeComponent } from './pipe/pipe.component';
 import { LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
-import { RaizQuadrada } from './pipe-personalizado/pipe-raiz-quadrada'
+import { RaizQuadrada } from './pipe-personalizado/pipe-raiz-quadrada';
+import { FormularioComponent } from './formulario/formulario.component'
 
 registerLocaleData(localePt, 'pt')
 
@@ -44,7 +45,8 @@ registerLocaleData(localePt, 'pt')
     NgStyleComponent,
     AlterarTextoDirective,
     PipeComponent,
-    RaizQuadrada
+    RaizQuadrada,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
