@@ -27,7 +27,7 @@ const routes: Routes = [
   {path:'class', component:NgClassComponent},
   {path:'style', component:NgStyleComponent},
   {path:'pipe', component:PipeComponent},
-  {path:'form', component:FormularioComponent}
+  {path:'formulario', component:FormularioComponent}
 ];
 
 @NgModule({

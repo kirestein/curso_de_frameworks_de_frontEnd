@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 //importando o módulo Forms
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // imporntando nossos componentes
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { HomeComponent } from './home/home.component';
@@ -51,7 +51,8 @@ registerLocaleData(localePt, 'pt')
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     {
