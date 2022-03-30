@@ -4,6 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TestandoService {
-
-  constructor() { }
+  //método para verificar se o ProductService está sendo executado corretamente
+  unitario(mensagem: any) {
+    console.log(mensagem)
+  }
 }
