@@ -26,6 +26,7 @@ import { registerLocaleData } from '@angular/common';
 import { RaizQuadrada } from './pipe-personalizado/pipe-raiz-quadrada';
 import { FormularioComponent } from './formulario/formulario.component';
 import { CServiceComponent } from './c-service/c-service.component'
+import { ProductService } from './product.service';
 
 registerLocaleData(localePt, 'pt')
 
@@ -64,7 +65,8 @@ registerLocaleData(localePt, 'pt')
     {
       provide: DEFAULT_CURRENCY_CODE,
       useValue: 'BRL'
-    }
+    },
+    ProductService
   ],
   bootstrap: [AppComponent]
 })

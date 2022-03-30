@@ -10,11 +10,11 @@ import { Product } from 'src/Product';
 export class CServiceComponent {
   // casting das propriedades que serão usadas
   cestaProdutos!:Product[]
-  objDoService
+
 
   //chamando o construtor
-  constructor(){
-    this.objDoService = new ProductService()
+  constructor(private objDoService: ProductService){
+
   }
 
   // criando uma função para - através do uso do objeto criado -  acessar a lista de produtos
